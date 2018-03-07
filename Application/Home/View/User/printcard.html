@@ -1,0 +1,98 @@
+<include file="user" />
+<div class="ss_nav col-sm-9" style="margin-top:20px;">
+    <p class="alert alert-info">准考证<span class="glyphicon glyphicon-menu-right"></span></p>
+    <table class="table" style="margin-bottom:100px;">
+      <tr class="info">
+        <td>考试时间</td>
+        <td>考试科目</td>
+        <td>考试地点</td>
+        <td>座次</td>
+        <td>打印准考证</td>
+      </tr>
+      <tr class="primary">
+        <td><?=$time?></td>
+        <td><?=$subject?></td>
+        <td><?=$real_address?></td>
+        <td><?=$seat_num?></td>
+        <td><button class="btn btn-primary xbtn" type="button" >打印</button></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+  <footer>
+  <nav class="navbar text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script>
+$(function(){
+$('.xbtn').click(function(){
+		var mydate=new Date();
+		var year=mydate.getFullYear();
+		var month=mydate.getMonth()+1;
+		var day=mydate.getDate();
+		var hour=mydate.getHours();
+		if(month=='12'){
+			if(day=='7')
+			{
+				if(hour>'19')
+				{
+					alert("准考证打印时间已截止于2017年12月7日20时");
+					
+				}
+				else{
+					location.href="printcard2.html";
+				}
+			}
+			else if(day=='2')
+			{	
+				if(hour<'8')
+				{
+					alert("准考证打印时间于2017年12月2日08时开始");
+					
+				}
+				else if(hour=='8')
+				{
+				alert(333)
+					location.href="printcard2.html";
+				}
+				else{
+				alert(222)
+					location.href="printcard2.html";
+				}
+			
+			}
+			else if(day<'2')
+			{	
+				alert("准考证打印时间于2017年12月2日08时开始");
+			
+			}
+			else if(day>'2')
+			{	
+				if(day<'7')
+				{
+					location.href="printcard2.html";
+				}
+				else if(day>'7')
+				{
+					alert("准考证打印时间已截止于2017年12月7日20时");
+				}
+			}
+			
+			else if(day>'7')
+			{
+				alert("准考证打印时间已截止于2017年12月7日20时");
+			}
+		    
+		}
+		else if(month<'12')
+		{
+			alert("准考证打印时间于2017年12月2日08时开始");
+			
+		}
+		
+	})
+	})
+</script>

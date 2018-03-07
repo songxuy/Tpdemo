@@ -1,0 +1,53 @@
+<include file="administrator" />
+<div class="paiexam col-sm-9" style="margin-top:20px;">
+      <ul class="list-group">
+      <li class="list-group-item list-group-item-warning">合格证查询<span class="glyphicon glyphicon-menu-right"></span></li>
+      </ul>
+      <form action="{:U('Index/checkhegezheng')}" style="margin-left:100px;" class="form-horizontal" method="post">
+        <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">选择时间 :</label>
+        <div class="col-sm-2 input-parent">
+          <input type="text" name="year" placeholder="2017" class="form-control vinput" id="year" value="<?=$year?>"/>
+        </div>
+		<div class="col-sm-2 input-parent">
+          <input type="text" name="month" placeholder="01" class="form-control vinput" id="month" value="<?=$month?>"/>
+        </div>
+        <div class="col-sm-2 input-parent">
+          <button type="submit" class="btn btn-primary">查询</button>
+        </div>
+      </div>
+      </form>
+    <table class="table" style="margin-top:35px;margin-bottom: 100px;">
+      <tr class="info">
+        <td>姓名</td>
+        <td>科目</td>
+        <td>年份</td>
+        <td>合格证颁发日期</td>
+        <td>合格证到期日期</td>
+		<td>到期提醒</td>
+      </tr>
+	  <foreach name="hegezheng" item="h">
+      <tr class="primary">
+        <td>{$h.real_account}</td>
+        <td>{$h.subject}</td>
+        <td>{$h.date}</td>
+        <td>{$h.time}</td>
+		<td>{$h.end_date}</td>
+		<td>{$h.alert_date}</td>
+      </tr>
+	  </foreach>
+    </table>
+</div>
+</div>
+</div>
+<footer>
+  <nav class="navbar text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script type="text/javascript">
+  $(function(){
+   
+  })
+</script>

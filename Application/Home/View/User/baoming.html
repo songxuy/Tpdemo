@@ -1,0 +1,65 @@
+<include file="user" />
+<div class="ss_nav col-sm-9" style="margin-top:20px;">
+    <p class="alert alert-success">报名<span class="glyphicon glyphicon-menu-right"></span></p>
+    <table class="table" style="margin-bottom:100px;">
+      <tr class="info">
+        <td>考试时间</td>
+        <td>考试科目</td>
+        <td>我要报名</td>
+      </tr>
+	  <form action="{:U('User/baoming')}" method="post">
+       <tr class="primary">
+        <td><?=$date?></td>
+        <td><?=$subject?></td>
+		<input type="hidden" name="flag" value="1"/>
+		<input type="hidden" name="date" value="<?=$date?>"/>
+        <td><button class="btn btn-primary bn" type="submit" name="<?=$baoming?>" id="baom">报名</button></td>
+      </tr>
+     </form>
+    </table>
+</div>
+</div>
+</div>
+<footer>
+  <nav class="navbar text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script>
+$(function(){
+	$('#baom').click(function(){
+		var mydate=new Date();
+		var year=mydate.getFullYear();
+		var month=mydate.getMonth()+1;
+		var day=mydate.getDate();
+		var hour=mydate.getHours();
+		if(month=='11'){
+			if(day=='26')
+			{
+				if(hour>'19')
+				{
+					alert("报名时间已截止于2017年11月26日20时");
+					return false;
+				}
+			}
+			else if(day>'26')
+			{	
+				alert("报名时间已截止于2017年11月26日20时");
+				return false;
+			}
+		    
+		}
+		else if(month=='12')
+		{
+			alert("报名时间已截止于2017年11月26日20时");
+			return false;
+		}
+		
+	})
+		if($('.btn').attr('name')==1){
+			$('.btn').html("已报名");
+			$('.btn').attr('disabled','true');
+		}
+})
+</script>

@@ -1,0 +1,190 @@
+[ 2017-11-16T11:30:42+08:00 ] 127.0.0.1 /index.php/Home/User/baoming.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `notice`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `notice` WHERE `id` = 13  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `user` WHERE `account` = 'qweqwe' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 41 AND `account` = 'qweqwe'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 53 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 86 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 92 行.
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT `account`,`password`,`real_account`,`sex`,`birth`,`id_card`,`profession`,`school`,`major`,`education`,`graduate`,`work_address`,`phone`,`addr`,`post_address`,`tel_num`,`mail`,`path`,`pass` FROM `user` WHERE `account` = 'qweqwe' AND `id` = 41  [ RunTime:0.0000s ]
+SQL: INSERT INTO `user` (`date`,`flag`,`account`,`password`,`real_account`,`sex`,`birth`,`id_card`,`profession`,`school`,`major`,`education`,`graduate`,`work_address`,`phone`,`addr`,`post_address`,`tel_num`,`mail`,`path`,`pass`) VALUES ('201601','1','qweqwe','e10adc3949ba59abbe56e057f20f883e','孙','男','2017-11-01','112112122345678877','研究员','qwe','防雷','硕士研究生以上','2017-03','sad','18273454567','','','wuwu1','qweqwqweq@qq.com',NULL,'1') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-16T11:30:55+08:00 ] 127.0.0.1 /index.php/Home/User/baoming.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `notice`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `notice` WHERE `id` = 13  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `user` WHERE `account` = 'qweqwe' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46 AND `account` = 'qweqwe'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 86 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\85c15a4bfa0cca2d317beed460ec1545.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-16T11:30:59+08:00 ] 127.0.0.1 /index.php/Home/User/shenhe.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `user` WHERE `account` = 'qweqwe' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `notice` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `date` FROM `notice` WHERE `id` = 13  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 198 行.
+SQL: SELECT `subject` FROM `notice` WHERE `id` = 13  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 199 行.
+SQL: SELECT `pass` FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 200 行.
+SQL: SELECT `reason` FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant reason - assumed 'reason' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 201 行.
+NOTIC: [8] Undefined index: upload1 C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 221 行.
+NOTIC: [8] Undefined index: upload2 C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 225 行.
+NOTIC: [8] Undefined index: upload3 C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 229 行.
+NOTIC: [8] Undefined index: upload4 C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 233 行.
+NOTIC: [8] Undefined index: upload5 C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 237 行.
+NOTIC: [8] Undefined index: upload6 C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 241 行.
+NOTIC: [8] Undefined variable: info C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 245 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 245 行.
+NOTIC: [8] Undefined variable: bigimg C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 250 行.
+SQL: UPDATE `user` SET `path`=NULL WHERE `id` = 41 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\3400d5118ed3d47597584e5642bf974e.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-16T11:31:02+08:00 ] 127.0.0.1 /index.php/Home/User/printcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 346 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 347 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 348 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sex C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 355 行.
+NOTIC: [8] Undefined variable: id_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 356 行.
+NOTIC: [8] Undefined variable: work_address C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 359 行.
+NOTIC: [8] Undefined variable: exam_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 360 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

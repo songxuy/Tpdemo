@@ -1,0 +1,90 @@
+[ 2017-12-27T22:19:23+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/622727197009038329/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:19:23+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/622727197009038329/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:19:23+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/622727197009038329/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:19:23+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/622727197009038329/5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:19:23+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/622727197009038329/6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:19:23+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/622727197009038329/4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:19:36+08:00 ] 127.0.0.1 /tpdemo/1/Application/Admin/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载模块:Application
+
+[ 2017-12-27T22:20:14+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003126s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:20:14+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024807s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:20:14+08:00 ] 127.0.0.1 /tpdemo/1/Application/Admin/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+ERR: 无法加载模块:Application
+
+[ 2017-12-27T22:20:14+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:20:15+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:20:15+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:20:15+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002248s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-12-27T22:20:15+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/620422197812153238/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+ERR: 无法加载模块:Uploads
+

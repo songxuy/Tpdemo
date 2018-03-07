@@ -1,0 +1,43 @@
+<include file="administrator" />
+<div class="shenhe col-sm-9" style="margin-top:20px;">
+    <p class="alert alert-info">考试列表<span class="glyphicon glyphicon-menu-right"></span></p>
+    <table class="table" style="margin-top:35px; margin-bottom:100px;">
+      <tr class="info">
+        <td>考试日期</td>
+        <td>考试时间</td>
+        <td>考试地点</td>
+        <td>考试科目</td>
+        <td>考试状态</td>
+      </tr>
+	  <foreach name="examInfo" item="e">
+      <tr class="primary">
+        <td>{$e.date}</td>
+        <td>{$e.time}</td>
+        <td>{$e.address}</td>
+        <td>{$e.subject}</td>
+        <td name="{$e.status}">{$e.status}</td>
+      </tr>
+      </foreach>
+    </table>
+</div>
+</div>
+</div>
+<footer>
+  <nav class="navbar text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script>
+$(function(){
+	for(var i=0;i<$('.table tr').length;i++){
+	if(i!=0){
+		if($('.table tr').eq(i).children().eq(4).html()=='1'){
+			$('.table tr').eq(i).children().eq(4).html('已考试')
+		}else{
+			$('.table tr').eq(i).children().eq(4).html('未考试')
+		}
+	}
+  }
+})
+</script>

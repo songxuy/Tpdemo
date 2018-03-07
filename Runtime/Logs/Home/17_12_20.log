@@ -1,0 +1,322 @@
+[ 2017-12-20T21:01:46+08:00 ] ::1 /index.php/Home/User/printcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 346 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 347 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 348 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sex C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 355 行.
+NOTIC: [8] Undefined variable: id_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 356 行.
+NOTIC: [8] Undefined variable: work_address C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 359 行.
+NOTIC: [8] Undefined variable: exam_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 360 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-20T21:01:49+08:00 ] ::1 /index.php/Home/User/printcard2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 375 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 376 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 379 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 380 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id_card - assumed 'id_card' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 381 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 382 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 383 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant work_address - assumed 'work_address' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 384 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-20T21:02:49+08:00 ] ::1 /index.php/Home/User/printcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 346 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 347 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 348 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sex C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 355 行.
+NOTIC: [8] Undefined variable: id_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 356 行.
+NOTIC: [8] Undefined variable: work_address C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 359 行.
+NOTIC: [8] Undefined variable: exam_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 360 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-20T21:02:55+08:00 ] ::1 /index.php/Home/User/printcard2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 375 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 376 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 379 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 380 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id_card - assumed 'id_card' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 381 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 382 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 383 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant work_address - assumed 'work_address' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 384 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-20T21:04:16+08:00 ] ::1 /index.php/Home/User/printcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0020s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 346 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 347 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 348 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sex C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 355 行.
+NOTIC: [8] Undefined variable: id_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 356 行.
+NOTIC: [8] Undefined variable: work_address C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 359 行.
+NOTIC: [8] Undefined variable: exam_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 360 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-20T21:04:20+08:00 ] ::1 /index.php/Home/User/printcard2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0030s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 375 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 376 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 379 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 380 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id_card - assumed 'id_card' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 381 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 382 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 383 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant work_address - assumed 'work_address' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 384 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-20T21:06:36+08:00 ] 127.0.0.1 /index.php/Home/User/printcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT max(id) FROM `user` WHERE `account` = 'qweqwe'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 346 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant group - assumed 'group' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 347 行.
+SQL: SELECT * FROM `user` WHERE `id` = 46  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant seat_num - assumed 'seat_num' C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 348 行.
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE `time` LIKE '201601%'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sex C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 355 行.
+NOTIC: [8] Undefined variable: id_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 356 行.
+NOTIC: [8] Undefined variable: work_address C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 359 行.
+NOTIC: [8] Undefined variable: exam_card C:\phpmystudy\WWW\Application\Home\Controller\UserController.class.php 第 360 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 306 行.
+NOTIC: [8] Undefined variable: examtell C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 307 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 394 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 401 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 408 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 415 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 422 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 453 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 490 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 497 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 504 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 511 行.
+NOTIC: [8] Undefined variable: userinfo C:\phpmystudy\WWW\Runtime\Cache\Home\1131eaa5de72992ef604622b76f3878c.php 第 518 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

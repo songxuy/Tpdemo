@@ -1,0 +1,99 @@
+<include file="administrator" />
+<div class="shenhe col-sm-9" style="margin-top:20px;">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">用户审核<span class="glyphicon glyphicon-menu-right"></span></li>
+    </ul>
+    <form action="{:U('Index/shenhe')}" class="form-horizontal" method="post">
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">选择查询的信息 :</label>
+		<div class="col-sm-2 input-parent">
+          <input type="text" name="year" placeholder="2017" class="form-control vinput" id="year" value="<?=$year?>"/>
+        </div>
+		<div class="col-sm-2 input-parent">
+          <input type="text" name="month" placeholder="01" class="form-control vinput" id="month" value="<?=$month?>"/>
+        </div>
+		<div class="col-sm-2 input-parent">
+          <input type="text" name="real_account" placeholder="姓名" class="form-control vinput" id="name" value="<?=$real_account?>"/>
+        </div>
+        <div class="col-sm-2 input-parent">
+          <button type="submit" class="btn btn-primary" id="reserch">查询</button>
+        </div>
+      </div>
+    </form>
+    <table class="table" style="margin-top:35px;">
+      <tr class="info">
+        <td>序号</td>
+        <td>用户名</td>
+        <td>真实姓名</td>
+        <td>详情并审核</td>
+        <td>审核状态</td>
+        <td>审核不过原因</td>
+        <td>删除</td>
+      </tr>
+     <foreach name="users" item="u">
+	 <tr class="primary">
+        <td>1</td>
+		<td>{$u.account}</td>
+		<td>{$u.real_account}</td>
+        <td>
+			<form action="{:U('Index/checkuser')}" method="post">
+			<input type="hidden" name="account" value="{$u.account}"/>
+			<button class="btn btn-primary shehe" type="submit" >审核</button>
+			</form>
+		</td>
+        <td name="{$u.pass}">{$u.pass}</td>
+        <td>{$u.reason}</td>
+		<form action="{:U('Index/delet')}" method="post">
+		<input type="hidden" name="account" value="{$u.account}"/>
+        <td><button class="btn btn-primary" type="submit" >删除</button></td>
+		</form>
+      </tr>
+	  </foreach>
+    </table>
+    <form action="{:U('Index/adduser')}" class="form-horizontal" style="margin-bottom:150px;">
+      <div class="form-group" style="float:right;margin-top:20px;">
+        <div class="col-sm-12 input-parent">
+            <button type="submit" class="btn btn-primary" id="adduser">新增用户</button>
+        </div>
+      </div>
+    </form>
+</div>
+</div>
+</div>
+<footer>
+  <nav class="navbar-default text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script type="text/javascript">
+  $(function(){
+  /*alert($('#year').val()+$('#month').val())*/
+  /*$('#reserch').click(function(){
+  /*alert($('#name').val())
+  $.post("{:U('Index/shenhe',"","")}",{
+	keyword1:$('#year').val()+$('#month').val(),
+	keyword2:$('#name').val()
+	},function(data,textStatus){
+	}
+  )
+  })*/
+  for(var i=0;i<$('.table tr').length;i++){
+	if(i!=0&&i!=$('.table tr').length-1){
+		$('.table tr').eq(i).children().eq(0).html(i);
+		if($('.table tr').eq(i).children().eq(4).html()=='0'){
+			$('.table tr').eq(i).children().eq(4).html('待审核')
+		}else{
+			$('.table tr').eq(i).children().eq(4).html('审核通过')
+		}
+	}
+  }
+  $('.table tr:last-child').hide();
+    $('.shehe').click(function(){
+      location.href="checkuser.html";
+    })
+  })
+  $('#adduser').click(function(){
+	location.href="adduser.html";
+  })
+</script>

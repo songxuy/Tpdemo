@@ -1,0 +1,153 @@
+<include file="administrator" />
+<div class="zuoci col-sm-9" style="margin-top:20px;">
+      <p class="alert alert-warning">安排座次<span class="glyphicon glyphicon-menu-right" ></span></p>
+      <p>统计安排考试共<span id="examnum"><?=$examCount?></span>场</p>
+      <form class="form-horizontal" id="paizuoci" action="{:U('Examseat/post')}" method="post" >
+	  <!--<input type="hidden" name="<?=year?>" id="yr">
+	  <input type="hidden" name="<?=month?>" id="mn">-->
+      </form>
+</div>
+<footer>
+  <nav class="navbar text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script>
+$(function(){
+   var examnum=document.getElementById("examnum").innerHTML;
+   //var yr=$('#yr').val();
+   //var mn=$('#mn').val();
+    for(var i=0;i<examnum;i++){
+      if(i!=examnum-1){
+      $('#paizuoci').append(`<p class="text-info">第`+(i+1)+`场考试<span style="color:red;">(时间输入规范：2017年05月01号08:00-10:00)</span></p>
+      	<div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考试科目 :</label>
+        <div class="col-sm-10  input-parent">
+          <select class="form-control vinput" name="examSubj[]" id="examSub`+i+`">
+          	<option value="防雷装置检测">防雷装置检测</option>
+          </select>
+        </div>
+      </div>
+      	<div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考试准确地点 :</label>
+        <div class="col-sm-10  input-parent">
+          <input type="text" class="form-control vinput" id="ksplace`+i+`" name="examAddr[]" class="place">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考试准确时间 :</label>
+          <div class="col-sm-2 input-parent">
+          	<input class="form-control vinput" name="year[]" placeholder="2017" id="year`+i+`" >
+          </div>
+          <label for="name" class="control-label" style="margin-left:-20px;position:absolute;width:30px;">年</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="month`+i+`" name="month[]" id="month`+i+`" placeholder="01" >
+        </div>
+        <label for="name" class="control-label" style="margin-left:-20px;position:absolute;width:30px;">月</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="day`+i+`" name="day[]" placeholder="01">
+        </div>
+        <label for="name" class="control-label" style="margin-left:-20px;position:absolute;width:30px;">日</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="starth`+i+`" name="starth[]" style="margin-left:30px;" placeholder="08">
+        </div>
+        <label for="name" class="control-label" style="margin-left:0px;position:absolute;width:30px;">:</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="startm`+i+`" name="startm[]" style="margin-left:20px;" placeholder="00">
+        </div>
+        <label for="name" class="control-label" style="margin-left:10px;position:absolute;width:30px;">——</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="endh`+i+`" name="endh[]" style="margin-left:30px;" placeholder="10">
+        </div>
+        <label for="name" class="control-label" style="margin-left:0px;position:absolute;width:30px;">:</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="endm`+i+`" name="endm[]" style="margin-left:30px;" placeholder="00">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考场 :</label>
+        <div class="col-sm-10  input-parent">
+          <input type="text" class="form-control vinput" id="ksnumber`+i+`" name="roomNum[]">
+        </div>
+      </div>`)}else{
+        $('#paizuoci').append(`<p class="text-info">第`+(i+1)+`场考试<span style="color:red;">(时间输入规范：2017年05月01号08:00-10:00)</span></p>
+        	<div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考试科目 :</label>
+        <div class="col-sm-10  input-parent">
+          <select class="form-control vinput" name="examSubj[]" id="examSub`+i+`">
+          	<option value="防雷装置检测">防雷装置检测</option>
+          </select>
+        </div>
+      </div>
+        	<div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考试准确地点 :</label>
+        <div class="col-sm-10  input-parent">
+          <input type="text" class="form-control vinput" id="ksplace`+i+`" name="examAddr[]" class="place">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考试准确时间 :</label>
+          <div class="col-sm-2 input-parent">
+          	<input class="form-control vinput" name="year[]" placeholder="2017" id="year`+i+`" >
+          </div>
+          <label for="name" class="control-label" style="margin-left:-20px;position:absolute;width:30px;">年</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="month`+i+`" name="month[]" placeholder="08" >
+        </div>
+        <label for="name" class="control-label" style="margin-left:-20px;position:absolute;width:30px;">月</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="day`+i+`" name="day[]" placeholder="01">
+        </div>
+        <label for="name" class="control-label" style="margin-left:-20px;position:absolute;width:30px;">日</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="starth`+i+`" name="starth[]" style="margin-left:30px;" placeholder="08">
+        </div>
+        <label for="name" class="control-label" style="margin-left:0px;position:absolute;width:30px;">:</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="startm`+i+`" name="startm[]" style="margin-left:20px;" placeholder="00">
+        </div>
+        <label for="name" class="control-label" style="margin-left:10px;position:absolute;width:30px;">——</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="endh`+i+`" name="endh[]" style="margin-left:30px;" placeholder="10">
+        </div>
+        <label for="name" class="control-label" style="margin-left:0px;position:absolute;width:30px;">:</label>
+        <div class="col-sm-1  input-parent">
+          <input type="text" class="form-control vinput" id="endm`+i+`" name="endm[]" style="margin-left:30px;" placeholder="00">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">考场 :</label>
+        <div class="col-sm-10  input-parent">
+          <input type="text" class="form-control vinput" id="ksnumber`+i+`" name="roomNum[]">
+        </div>
+      </div>
+      <div class="form-group" style="float:right; margin-bottom:100px;">
+        <div class="col-sm-12 input-parent" >
+            <button type="submit" class="btn btn-primary" id="trans">生成座次</button>
+            <button type="reset" class="btn btn-default">取消</button>
+        </div>
+      </div>`)
+    }
+  }
+ /* var arr=new Array();
+  $('#trans').click(function(){
+  for(var i=0;i<examnum;i++){
+  	if($('#examSub'+i).val()!=''){
+  		arr.push($('#examSub'+i).val())
+  	}
+  	if($('#ksplace'+i).val()!=''){
+  	arr.push($('#ksplace'+i).val());
+  	}
+  	if($('#year'+i).val()!=''&&$('#month'+i).val()!=''&&$('#day'+i).val()!=''&&$('#starth'+i).val()!=''&&$('#startm'+i).val()!=''&&$('#endh'+i).val()!=''&&$('#endm'+i).val()!=''){
+  		var str=$('#year'+i).val()+$('#month'+i).val()+$('#day'+i).val()+$('#starth'+i).val()+$('#startm'+i).val()+$('#endh'+i).val()+$('#endm'+i).val();
+  		arr.push(str);
+  	}
+  	if($('#ksnumber'+i).val()!=''){
+  		arr.push($('#ksnumber'+i).val());
+  	}
+  }
+  alert(arr);
+  })*/
+})
+</script>

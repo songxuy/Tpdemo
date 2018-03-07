@@ -1,0 +1,464 @@
+[ 2017-12-01T10:44:31+08:00 ] ::1 /1/index.php/Admin/Index/shenhe.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `date` LIKE '%%' AND `real_account` LIKE '%%'  [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: pass H:\phpStudy\WWW\1\Application\Admin\Controller\IndexController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'account' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 561 行.
+NOTIC: [2] Illegal string offset 'real_account' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 562 行.
+NOTIC: [2] Illegal string offset 'account' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 565 行.
+NOTIC: [2] Illegal string offset 'pass' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 569 行.
+NOTIC: [2] Illegal string offset 'pass' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 569 行.
+NOTIC: [2] Illegal string offset 'reason' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 570 行.
+NOTIC: [2] Illegal string offset 'account' H:\phpStudy\WWW\1\Runtime\Cache\Admin\e17b5730c9867d0dd9d3bf627a20efb7.php 第 572 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-01T10:45:06+08:00 ] ::1 /1/index.php/Admin/Examseat/anpaizc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0020s ]
+SQL: SELECT MAX(id) AS tp_max FROM `notice` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `notice` WHERE `id` = 13  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant date - assumed 'date' H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 39 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `date` = 201712 AND `pass` = 1 AND `flag` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant year - assumed 'year' H:\phpStudy\WWW\1\Runtime\Cache\Admin\8e722e097cd28ce00bb75e87106e62df.php 第 471 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' H:\phpStudy\WWW\1\Runtime\Cache\Admin\8e722e097cd28ce00bb75e87106e62df.php 第 472 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-01T10:47:42+08:00 ] ::1 /1/index.php/Admin/Examseat/post.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `date` = 201712 AND `pass` = 1 AND `flag` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `date` = 201712 AND `pass` = 1 AND `flag` = 1  [ RunTime:0.0030s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '620422197812153238' [ RunTime:0.0170s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '622322197912060019' [ RunTime:0.0170s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '622723198809283655' [ RunTime:0.0100s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '510102196412116153' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '620302197702180613' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '110102201702122562' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '620422198102203258' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '622322199506202498' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '620503198003260931' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '622621196712315916' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '620103197910042333' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '620522199310132116' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622323199411121413' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '622301199207294431' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622301199303084725' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '622301199004284698' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '652201196201064615' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '622301196405192133' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '62272319870518381X' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '620502197410220450' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '620422198704283259' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '620102197011146335' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '620102195808165032' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '620321196711020018' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '620102197002034622' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '62230119930823004X' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622301195404076734' [ RunTime:0.0080s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '622723198204022014' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '620302199007010013' [ RunTime:0.0090s ]
+SQL: UPDATE `user` SET `group`='1',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '620522198810271329' [ RunTime:0.0070s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '62010219640221584x' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '622727197009038329' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '620102198104085839' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '620422199308047427' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '622723199408122011' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '622727196201013514' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '620102196304092428' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '622727198609283517' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '620102199306295329' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '622425198407190014' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '622322198008262012' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '622421197309246416' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622425198502250177' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '620421198804131846' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622428199406280724' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620402199604051353' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '622424199412050612' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '620521198512270022' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '622424198910244714' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '610124198809061251' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '62242119811026681X' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '510107199511031211' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '610502198810276624' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '620102197603235817' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622921198303056613' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '622421199408192619' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '620102199502145838' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '622427199009065493' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '622723199301202011' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='2',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '622421197902170010' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '622427198311195518' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '622421198305076418' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '622201199407183917' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '15230119790929053x' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '622627197002200017' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '620403196609230038' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '152824196609010636' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '622201199211256619' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622201199008264832' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '622223198704052837' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '622101196811240312' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '62011119920810103X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '620502195702060453' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '622701198808044515' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622901197309101059' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '622701198209134391' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '622701198911030832' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '622701198411240315' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '622701198911133813' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '622701199406182637' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '622701199104164521' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '622701197604280343' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '620302196706240818' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '620123198610200045' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622701196311151931' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '622922199402267011' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622226197605263019' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '62040219880423212X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '623021199504051612' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='3',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '620102198604023917' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '620522199001190021' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '621202198911233814' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '620422199304237725' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '623021199504271914' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '620402199505100412' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '620104198405041314' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '622923197912317119' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '622923197312273028' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622102199812281415' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '652901198506160015' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '622224198807216028' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '632121199304020025' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622621197005300015' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '620525199401041411' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622826198309241058' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620102197408116214' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '620523197811231435' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '620104198706061968' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '620423198812266532' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '620121198810132435' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '622723199402150417' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '622821199510031610' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '620503196005308012' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '622626196504230012' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '620102198310312115' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '622425197010236016' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622701197806010018' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '620422198805234325' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '62262419731020001X' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='4',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '622625199203120618' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '622223198008250311' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '622201199412020012' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '622226198810092030' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '622326199505154055' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '620103197910060013' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '62242119851030642X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '622923199201122015' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '62220119760705001X' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622621196901110012' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '622821199004152719' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '620525198210200016' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '622823199309040219' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '620121197704100013' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '610103196911170330' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '321086197102270413' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620421199405153612' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '622421198101110813' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '610121199301204456' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '622301199507144718' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '622827199406201710' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '620122198501292319' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '620422198102243727' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '62282719880919061X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '622827198801133119' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '620422198706108846' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '620421198306120917' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622201198611203036' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '622201198208241243' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '62222619880927251X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='5',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '622722197401023859' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '620102197309071516' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '622724196704120136' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '620102196005103617' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '622424196903201637' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '622102199008100636' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '410923197608223053' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '62270119730814139X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '622722196403093370' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622701196907201118' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '422301198301011256' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '622102199301257616' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '620111197810011038' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622701197302040571' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '622123198912211059' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622624197411240037' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620402198804210414' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '622722199007281437' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '622925196803230039' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '622102198711013011' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '622724198804150112' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '622201197703191525' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '622201198607252716' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '622226198605080540' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '622201196812080029' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622201199302027520' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '622201199005260916' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622421198508032319' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '620422199001220539' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '620422198911226417' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='6',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '622724197607170113' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '622701197705090311' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '620102197610146820' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '620104198702111120' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '622102198607302219' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '622724196511200113' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '622101198409110711' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '622724197311100112' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '622301199003203710' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622126196502190013' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '620421197906141346' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '622201197211211227' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '622201197003281220' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622201197310161210' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '620422199404298410' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '620524198412150030' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620102198511300014' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '620502196605280010' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '622102196803310022' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '622201196003141514' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '620522199006142539' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '622124197004010034' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '622102196810176237' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '622323198310056152' [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '620102197506026220' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622102197009160017' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '622102197809145210' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622326198908021033' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '622722199301071019' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '622722198603282036' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='7',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '622428199412113930' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '622722199502060658' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '622722199212173312' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '622701199408181179' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '622723197409072010' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '622701198304252249' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '622701197903154371' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '622701197312180594' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '620121197909262446' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622723197809061716' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '622722198904113316' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '620102196905251826' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '62012119940101722X' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622627198507220018' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '620103198408101021' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622424198709010027' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '622323199103297011' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '620502195511210033' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '620123199303233212' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '620402197207062412' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '620104199209270034' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '622102198510180024' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '622224198902156510' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '620403198502213122' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '622426199108046427' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622922199107195529' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '622201198501046316' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '620523198911012015' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '622627199401290629' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '620423199307074921' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='8',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '620102196206190622' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '620121199111191422' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '620103199210014023' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '622827197105200379' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '620102197211106231' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '620502197305105653' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '622725199202272041' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '622322199209202221' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '620502198206072312' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '622723197510091435' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '620502197408265131' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '622723196901153619' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '620103198307242634' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '622724199409250118' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '62272319730409001X' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '62052419630527002X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620423199102153319' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '622701197302281113' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '622701198502173437' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '621031988510282316' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '620525198904181817' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '62050219680313003x' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '620103197703023033' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '620522199202062915' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '620103198608121916' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622323198810196135' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '620122198312152018' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622827198703150337' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '620503198308211612' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '62290119880617101X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='9',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '620502199212011657' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '622124195710130018' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '620502196410212317' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='03' WHERE `date` = 201712 AND `id_card` = '620523199210040958' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='04' WHERE `date` = 201712 AND `id_card` = '620102197306015017' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='05' WHERE `date` = 201712 AND `id_card` = '620104197504050510' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='06' WHERE `date` = 201712 AND `id_card` = '620502197408310027' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='07' WHERE `date` = 201712 AND `id_card` = '320107197211083413' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='08' WHERE `date` = 201712 AND `id_card` = '340204196212290727' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='09' WHERE `date` = 201712 AND `id_card` = '321182198710293533' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='10' WHERE `date` = 201712 AND `id_card` = '321124197003061014' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='11' WHERE `date` = 201712 AND `id_card` = '32112419721211002X' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='12' WHERE `date` = 201712 AND `id_card` = '620102197907150011' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='13' WHERE `date` = 201712 AND `id_card` = '620104198611300292' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='14' WHERE `date` = 201712 AND `id_card` = '622224197201131535' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='15' WHERE `date` = 201712 AND `id_card` = '622821197910041819' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='16' WHERE `date` = 201712 AND `id_card` = '620104197701160516' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='17' WHERE `date` = 201712 AND `id_card` = '623023198510031819' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='18' WHERE `date` = 201712 AND `id_card` = '620104196212020817' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='19' WHERE `date` = 201712 AND `id_card` = '620104198809231114' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='20' WHERE `date` = 201712 AND `id_card` = '310110196906308211' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='21' WHERE `date` = 201712 AND `id_card` = '622323198901110210' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='22' WHERE `date` = 201712 AND `id_card` = '321124197002070074' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='23' WHERE `date` = 201712 AND `id_card` = '620402197112053118' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='24' WHERE `date` = 201712 AND `id_card` = '62272419680503013x' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='25' WHERE `date` = 201712 AND `id_card` = '622621198712053812' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='26' WHERE `date` = 201712 AND `id_card` = '620103198612251019' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='27' WHERE `date` = 201712 AND `id_card` = '622201197405121510' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='28' WHERE `date` = 201712 AND `id_card` = '620105197103121038' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='29' WHERE `date` = 201712 AND `id_card` = '620104196304051397' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='10',`seat_num`='30' WHERE `date` = 201712 AND `id_card` = '620422198707228159' [ RunTime:0.0050s ]
+SQL: UPDATE `user` SET `group`='11',`seat_num`='01' WHERE `date` = 201712 AND `id_card` = '620102198406133912' [ RunTime:0.0060s ]
+SQL: UPDATE `user` SET `group`='11',`seat_num`='02' WHERE `date` = 201712 AND `id_card` = '620402198612110013' [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0030s ]
+SQL: SELECT MAX(id) AS tp_max FROM `exam` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `time` FROM `exam` WHERE `id` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 160 行.
+SQL: INSERT INTO `exam` (`real_address`,`time`,`subject`,`group`,`room_num`) VALUES ('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','1','1'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','2','2'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','3','3'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','4','4'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','5','5'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','6','6'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','7','7'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','8','8'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','9','9'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','10','10'),('兰州女子中等专业学校（三十七中学）地址：兰州市城关区嘉峪关北路5号','2017121608001000','防雷装置检测','11','11') [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 2 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 2 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 2 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 3 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 3 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 3 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 4 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 4 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 4 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 5 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 5 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 5 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 6 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 6 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 6 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 7 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 7 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 7 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 8 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 8 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 8 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 9 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 9 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 9 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 10 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 10 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 10 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 11 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 11 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 11 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 12 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 12 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 12 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 13 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 13 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 13 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 14 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 14 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 14 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 15 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 15 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 15 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 16 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 16 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 16 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 17 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 17 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 17 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 18 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 18 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 18 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 19 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 19 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 19 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 20 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 20 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 20 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 21 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 21 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 21 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 22 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 22 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 22 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 23 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 23 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 23 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 24 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 24 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 24 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 25 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 25 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 25 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 26 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 26 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 26 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 27 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 27 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 27 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 28 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 28 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 28 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+NOTIC: [8] Undefined offset: 29 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 249 行.
+NOTIC: [8] Undefined offset: 29 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 252 行.
+NOTIC: [8] Undefined offset: 29 H:\phpStudy\WWW\1\Application\Admin\Controller\ExamseatController.class.php 第 255 行.
+SQL: SELECT * FROM `user`  [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,50 @@
+<include file="administrator" />
+<div class="paiexam col-sm-9" style="margin-top:20px;">
+     <p class="alert alert-success">成绩查询<span class="glyphicon glyphicon-menu-right"></span></p>
+     <form action="{:U(Exammanage/chaxunchengji)}" style="margin-left:100px;" class="form-horizontal" method="post">
+      	<div class="form-group">
+        <label for="name" class="col-sm-2  control-label">输入考试时间 :</label>
+		<div class="col-sm-2 input-parent">
+          <input type="text" name="year" placeholder="2017" class="form-control vinput" id="year" value="<?=$year?>"/>
+        </div>
+		<div class="col-sm-2 input-parent">
+          <input type="text" name="month" placeholder="01" class="form-control vinput" id="month" value="<?=$month?>"/>
+        </div>
+        <div class="col-sm-2 input-parent">
+        	<button type="submit" class="btn btn-primary">查询</button>
+        </div>
+      </div>
+    </form>
+    <table class="table" style="margin-top:20px;margin-bottom: 100px;">
+      <tr class="info">
+        <td>序号</td>
+        <td>用户名</td>
+        <td>真实姓名</td>
+        <td>成绩</td>
+      </tr>
+	  <foreach name="userInfo" item="u">
+      <tr class="primary">
+        <td>1</td>
+        <td>{$u.account}</td>
+        <td>{$u.real_account}</td>
+        <td>{$u.score}</td>
+      </tr>
+      </foreach>
+     
+    </table>
+ </div>
+ </div>
+ </div>
+ <footer>
+  <nav class="navbar text-center navbar-fixed-bottom">
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script>
+	for(var i=0;i<$('.table tr').length;i++){
+	if(i!=0){
+		$('.table tr').eq(i).children().eq(0).html(i);
+	}
+  }
+</script>

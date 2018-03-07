@@ -1,0 +1,24 @@
+[ 2018-01-09T11:35:33+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/zhang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-09T11:38:00+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/zhang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-09T11:38:00+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/2wm.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-09T11:38:31+08:00 ] 127.0.0.1 /TPdemo/1/Uploads/zhang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+ERR: 无法加载模块:Uploads
+

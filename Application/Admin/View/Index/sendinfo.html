@@ -1,0 +1,87 @@
+<include file="administrator" />
+<div class="sendmess col-sm-9" style="margin-top:20px;">
+      <p class="alert alert-info">发布信息<span class="glyphicon glyphicon-menu-right"></span></p>
+	  <div class="ale col-sm-12">
+      <form action="{:U('Index/sendinfo')}" class="form-horizontal" role="form" id="register-form" method="post">
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">标题 :</label>
+        <div class="col-sm-10  input-parent">
+          <input type="text" class="form-control vinput" id="title" name="title">
+          <span></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name" class="col-sm-2  control-label">内容 :</label>
+        <div class="col-sm-10  input-parent">
+          <textarea class="form-control vinput" id="content" name="detail" rows="20" cols="150"></textarea>
+        </div>
+      </div>
+      <div class="form-group" style="float:right;margin-bottom:150px;">
+        <div class="col-sm-12 input-parent">
+            <button type="submit" class="btn btn-primary">发布</button>
+            <button type="reset" class="btn btn-default">取消</button>
+        </div>
+      </div>
+      </form>
+	  </div>
+</div>
+</div>
+</div>
+<footer>
+  <nav class="navbar text-center navbar-fixed-bottom" > 
+      Copyright xxx Gan su Meteorological Society<br>
+      甘肃省气象学会 &copy;版权所有
+  </nav>
+</footer>
+<script type="text/javascript">
+	var index=0;
+	var timer;
+	//定时器：setTimeout（只执行一次） setInterval(每隔多长时间执行一次)
+	$(function(){
+		//找到所有的图片
+		var pic=$('.bg li');//找到所有的li
+		var lis=$('.indication li');
+	//找到所有的小圆点
+		pic.eq(0).addClass('current').siblings().removeClass("current");
+		function changepic(){
+			pic.eq(index).addClass('current').siblings().removeClass("current");
+			lis.eq(index).addClass('active').siblings().removeClass("current");
+		}
+		Showtime();
+		//点击圆点换图
+		lis.hover(function(){
+			index=$(this).index();
+			changepic();
+			clearInterval(timer);
+		},function(){
+			Showtime();
+		})
+		$('.btn_left').click(function(){
+			clearInterval(timer);
+			if (index == 0) {
+            index = $('.bg li').length;
+        }
+        index--;
+        changepic();
+        Showtime();
+		})
+		$('.btn_right').click(function(){
+			clearInterval(timer);
+			if (index == $('.bg li').length-1) {
+            index = -1;
+        }
+        index++;
+        changepic();
+        Showtime();
+		})
+		function Showtime() {
+    	timer = setInterval(function () {
+        index++;
+        if (index == $('.bg li').length) {
+            index = 0;
+        }
+        changepic();
+    }, 3000);
+    }
+	})
+</script>
